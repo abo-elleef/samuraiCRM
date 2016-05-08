@@ -7,7 +7,7 @@ module Samurai
 		end
 
   	def current_ability
-  		@current_ability ||=Samurai::Abiltiy.new(current_user)
+  		@current_ability ||=Samurai::Ability.new(current_user)
   	end
   end
 end
