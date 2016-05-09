@@ -35,6 +35,7 @@ gem 'modular_engine'
 gem 'deface'
 gem 'samurai_core', path: 'engines/core'
 gem 'samurai_contacts', path: 'engines/contacts'
+gem 'samurai_tasks', path: 'engines/tasks'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
