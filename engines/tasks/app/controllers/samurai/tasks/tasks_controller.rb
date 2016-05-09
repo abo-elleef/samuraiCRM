@@ -28,7 +28,7 @@ module Samurai
         @task = Task.new(task_params)
 
         if @task.save
-          redirect_to [samurai,@task], notice: 'Task was successfully created.'
+          redirect_to [tasks,@task], notice: 'Task was successfully created.'
         else
           render :new
         end
@@ -37,7 +37,7 @@ module Samurai
       # PATCH/PUT /tasks/1
       def update
         if @task.update(task_params)
-          redirect_to [samurai,@task], notice: 'Task was successfully updated.'
+          redirect_to [tasks,@task], notice: 'Task was successfully updated.'
         else
           render :edit
         end

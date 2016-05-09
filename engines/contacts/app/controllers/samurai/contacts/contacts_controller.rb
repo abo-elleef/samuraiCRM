@@ -29,7 +29,7 @@ module Samurai
         @contact = Contact.new(contact_params)
 
         if @contact.save
-          redirect_to [samurai,@contact], notice: 'Contact was successfully created.'
+          redirect_to [contacts,@contact], notice: 'Contact was successfully created.'
         else
           render :new
         end
@@ -38,7 +38,7 @@ module Samurai
       # PATCH/PUT /contacts/1
       def update
         if @contact.update(contact_params)
-          redirect_to [samurai,@contact], notice: 'Contact was successfully updated.'
+          redirect_to [contacts,@contact], notice: 'Contact was successfully updated.'
         else
           render :edit
         end
@@ -47,7 +47,7 @@ module Samurai
       # DELETE /contacts/1
       def destroy
         @contact.destroy
-        redirect_to samurai.contacts_url, notice: 'Contact was successfully destroyed.'
+        redirect_to contacts.contacts_url, notice: 'Contact was successfully destroyed.'
       end
 
       private
