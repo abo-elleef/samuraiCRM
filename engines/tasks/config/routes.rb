@@ -1,5 +1,3 @@
-Samurai::Core::Engine.routes.draw do
-	scope module: "tasks" do
-		resources :tasks
-	end
+Samurai::Tasks::Engine.routes.draw do
+	resources :tasks
 end

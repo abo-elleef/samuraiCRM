@@ -1,4 +1,4 @@
-<%= link_to 'New Contact', samurai.new_contact_path,
+<%= link_to 'New Contact', contacts.new_contact_path,
 class: 'pull-right btn btn-primary' %>
 <h2>Listing Contacts</h2>
 <hr>
@@ -26,11 +26,11 @@ My Contacts
 <td><%= contact.email %></td>
 <td><%= contact.phone %></td>
 <td>
-<%= link_to 'Show', [samurai, contact],
+<%= link_to 'Show', [contacts, contact],
 class: 'btn btn-primary' %>
-<%= link_to 'Edit', samurai.edit_contact_path(contact),
+<%= link_to 'Edit', contacts.edit_contact_path(contact),
 class: 'btn btn-primary' %>
-<%= link_to 'Destroy', [samurai, contact],
+<%= link_to 'Destroy', [contacts, contact],
 class: 'btn btn-primary' , method: :delete,
 data: { confirm: 'Are you sure?' } %>
 </td>
