@@ -1,28 +1,15 @@
-== README
+== Modular rails APP Example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+example how to structure modular rails app, with totally seperated engines 
 
-Things you may want to cover:
+Structure points 
 
-* Ruby version
+* Engine per feature 
 
-* System dependencies
+* decorators to interact these engines (features) with each others 
 
-* Configuration
+* separated migrations per engine
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* find and discover methodolgy for check for Engines availability 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
