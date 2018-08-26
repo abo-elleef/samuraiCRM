@@ -1,4 +1,4 @@
-== Modular rails APP Example
+== Modular Rails App Example
 
 example how to structure modular rails app, with totally seperated engines 
 
